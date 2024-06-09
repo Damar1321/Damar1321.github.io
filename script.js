@@ -10,6 +10,7 @@ const missions = [
   { target: 0.000000010000, reward: 0.000000010000, completed: false, claimed: false },
   { target: 0.000000100000, reward: 0.000000100000, completed: false, claimed: false },
   { target: 0.000001000000, reward: 0.000001000000, completed: false, claimed: false },
+  { target: 0.000010000000, reward: 0.000010000000, completed: false, claimed: false },
   // Add more missions here as needed
 ];
 
