@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gems Miner</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idle Gems Miner</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Gems Miner</h1>
-    <div class="gems-display">
-      <span>Gems: </span><span id="gems">0.000000000000</span>
+    <div class="container">
+        <h1 class="comic-neue-regular">Idle Gems Miner</h1>
+        <p class="comic-neue-regular" id="gems">Gems: 0.000000000</p>
+        <button onclick="mineGems()">Mine Gems</button>
+        <div id="upgrades">
+            <h2>Upgrades</h2>
+            <button onclick="buyUpgrade('click')">Increase Click Power (Cost: <span id="clickUpgradeCost">0.000000100</span> gems)</button>
+            <button onclick="buyUpgrade('auto')">Increase Auto Mining (Cost: <span id="autoUpgradeCost">0.000000200</span> gems)</button>
+        </div>
+        <button onclick="prestige()">Prestige (Requires: <span id="prestigeCost">0.000010000</span> gems)</button>
+        <button onclick="goToStats()">View Stats</button>
+        <div id="achievements">
+            <h2>Achievements</h2>
+            <ul id="achievementList"></ul>
+        </div>
     </div>
-    <div class="upgrade-area"></div>
-    <div class="mission-area">
-      <h2>Mission Area</h2>
-      <ul id="missions"></ul>
-    </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

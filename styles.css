@@ -1,80 +1,54 @@
+* {
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
 .container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  text-align: center;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-h1 {
-  margin-top: 0;
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
 }
 
-.gems-display {
-  margin: 20px 0;
-  font-size: 1.2em;
+button:hover {
+    background-color: #45a049;
 }
 
-.upgrade-area, .mission-area {
-  margin-top: 20px;
+#achievements, #upgrades {
+    margin-top: 20px;
 }
 
-.mission-item {
-  list-style: none;
-  margin: 10px 0;
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.mission-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.claim-btn {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.claim-btn:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-.claim-btn:not(:disabled) {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.save-load-buttons {
-  margin-top: 20px;
-}
-
-.save-load-buttons button {
-  padding: 5px 10px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
-}
-
-.save-load-buttons button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
+#achievements li {
+    background-color: #e7e7e7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
 }
